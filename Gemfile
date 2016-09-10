@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
