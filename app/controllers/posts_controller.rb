@@ -18,6 +18,22 @@ class PostsController < ApplicationController
     	
     end
 
+    def edit
+    	@post = Post.find(params[:id])
+    	
+    end
+
+    def update
+    	@post = Post.find(params[:id])
+    	@post.update(post_params)
+    	if @post.valid?
+    		redirect_to root_path
+    	else
+    		render :new, status: :unprocessable_entity
+    	end
+    	
+    end
+
 	private
 
 	def post_params
