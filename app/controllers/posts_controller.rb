@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 
 	before_action :authenticate_user!, only: [:new, :create]
-	before_action :is_owner?, only: [:edit, :update]
+	before_action :is_owner?, only: [:edit, :update, :destroy]
 
 	def new
        @post = Post.new
@@ -38,7 +38,7 @@ class PostsController < ApplicationController
     end
 
     def destroy
-    	@post = Post.fine(params[:id])
+    	@post = Post.find(params[:id])
     	@post.destroy
     	 redirect_to root_path
     	
