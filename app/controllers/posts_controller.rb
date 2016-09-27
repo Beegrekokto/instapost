@@ -1,5 +1,8 @@
 class PostsController < ApplicationController
+
 	before_action :authenticate_user!, only: [:new, :create]
+	before_action :is_owner?, only: [:edit, :update]
+
 	def new
        @post = Post.new
 	end
@@ -30,6 +33,21 @@ class PostsController < ApplicationController
     		redirect_to root_path
     	else
     		render :new, status: :unprocessable_entity
+    	end
+    	
+    end
+
+    def destroy
+    	@post = Post.fine(params[:id])
+    	@post.destroy
+    	 redirect_to root_path
+    	
+    end
+
+    private
+    def is_owner?
+    	if Post.find(params[:id]).user != current_user
+    		redirect_to root_path
     	end
     	
     end
