@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -12,6 +13,7 @@
 
 </body>
 <nav>
+<span class="pull-right brand">Instapost</span>
 <% if user_signed_in? %>
     <%= link_to 'New Post', new_post_path %>
     <%= link_to 'Edit Setting', edit_user_registration_path %>
