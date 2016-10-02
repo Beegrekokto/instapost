@@ -7,6 +7,13 @@
 	<% if post.user_id == current_user %>
 	    <%= link_to 'Edit Post', edit_post_path(post.id) %>
 	    <%= link_to 'Delete', post_path(post.id), method: :delete %>
-	    
 	<% end %>
+    
+    <% if user_signed_in? %>
+	  <%= simple_form_for Comment.new, url: post_comments_path(post), method: :post do |f| %>
+		  <%= f.input :text, label: 'Comment', placeholder: 'Add a Comment ....' %>
+		  <%= f.submit 'Post', class: 'btn btn-primary btn-block' %>
+	  <% end %>
+	 <% end %>
+
 <% end %>
