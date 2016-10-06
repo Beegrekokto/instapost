@@ -3,13 +3,80 @@ body {
 }
 
 nav {
+    width: 100%;
 	background-color: #fafafa;
 	padding: 0px 0px 0px 0px;
 	height: 77px;
+	border: 0px solid black;
 }
 
 .brand {
 	font-family: 'Satisfy', cursive;
 	font-size: 26px;
 	vertical-align: middle;
+	color: white;
+	text-align: center;
+	font-weight: 550;
 }
+.nav_links {
+	vertical-align: middle;
+	font-size: 16px;
+	font-weight: 5px;
+	margin: 0px 20px;
+}
+.nav_wrapper{
+	line-height: 78px;
+	text-align: center;
+	
+}
+
+.brand {
+  a {
+  	color: black;
+  }
+}
+.nav_links{
+	a{
+	  color: black;
+	}
+}
+
+.photo{
+	width:100%;
+	max-height:100%;
+}
+.post_box{
+	background-color: white;
+	border: 1px solid #edeeee;
+	border-radius: 3px;
+	margin-top: 60px;
+	height: 600px 0px;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 0px 0px 0px;
+	button{
+	background: #337ab7;
+	color: white;
+	border: 0px;
+	
+}
+	
+}
+.post_header{
+	height: 64px;
+	padding: 14px 20px;
+	font-weight: 600px;
+}
+.post_body{
+	padding: 10px 24px 0px 20px;
+}
+.post_comments{
+	padding: 10px 25px;
+}
+
+.timestamp {
+	color:#a5a7aa;
+	font-weight: 500px;
+}
+
