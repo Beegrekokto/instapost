@@ -7,7 +7,7 @@ nav {
 	background-color: white;
 	padding: 0px 0px 0px 0px;
 	height: 77px;
-	border-bottom: 1px solid whitesmoke;
+	border-bottom: 1px solid #dbdbdb;
 }
 
 .brand {
@@ -99,7 +99,44 @@ nav {
 	margin-right: 150px;
 }
 .edit_setting{
-	margin-left: 350px;
-	margin-right: 150px;
-	border: 1px solid black;
+	margin-left: 400px;
+	border: 1px solid #dbdbdb;
+	padding-left: 20px;	
+	margin-top: 60px;
+	margin-right: 300px;
+	margin-bottom: 60px;
+	padding-bottom: 60px;
+	background-color: #ffffff;
+}
+.login-form{
+    margin-left: 400px;
+	border: 1px solid #dbdbdb;
+	padding-left: 40px;	
+	margin-top: 60px;
+	margin-right: 600px;
+	padding-bottom: 60px;
+	background-color: #ffffff;
+	
+}
+.link{
+	border: 1px solid #dbdbdb;
+	margin-top: 10px;
+	margin-right: 600px;
+	margin-bottom: 20px;
+	margin-left: 400px;
+	padding-left: 40px;
+	background-color: #ffffff;
+	}
+.new-post{
+    margin-left: 400px;
+	border: 1px solid #dbdbdb;
+	padding-left: 40px;	
+	margin-top: 60px;
+	margin-right: 600px;
+	padding-bottom: 60px;
+	background-color: #ffffff;
+	
+}
+.btn-block{
+	background-color: blue;
 }
