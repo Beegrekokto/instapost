@@ -13,8 +13,8 @@
 
 			<%= link_to '<button type="button">View Post</button>'.html_safe,  post_path(post.id), :class=>"button" %>
 			<% if post.user_id == current_user %>
-			   </br> <%= link_to 'Edit Post', edit_post_path(post.id) %>
-			    </br><p><%= link_to 'Delete', post_path(post.id), method: :delete %>
+			         <%= link_to 'Edit Post', edit_post_path(post.id) %>
+			         <%= link_to 'Delete', post_path(post.id), method: :delete %>
 			<% end %>
 
 			<div class="post_body">

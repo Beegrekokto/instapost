@@ -137,6 +137,29 @@ nav {
 	background-color: #ffffff;
 	
 }
-.btn-block{
-	background-color: blue;
+.new-account{
+	background: url(love.jpg);
+	height: 600px;
+	width: auto;
+	border: 1px solid black;	
+}
+.new-people{
+    margin-left: 750px;
+	border: 1px solid #dbdbdb;
+	padding-left: 20px;	
+	margin-right: 100px;
+	margin-top: 60px;
+	padding-bottom: 60px;
+	background-color: #ffffff;
+	
+}
+.simple_form{
+	input[type=text]{
+	 width: 180px;
+	 height: 100px;
+	}
+	input[type=submit].btn-block{
+	    width: 80px;
+		background: #3897f0;
+	}
 }
