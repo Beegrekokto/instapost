@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Instapost</title>
+  <title>Share Your Photos Online-Instapost</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'favicon.ico' %>
   <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -12,19 +13,19 @@
 <nav>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 col-lg-offset-3">
+			<div class="col-lg-7 col-lg-offset-2">
 				<div class="row">
 					<div class="nav-wrapper">
 						<div class="row">
 
 							<div class="col-xs-6">
-								<span class="pull-left brand"><%= link_to 'Instagram', root_path %></span>
+								<span class="pull-left brand"><%= link_to (image_tag("icon.jpg")), root_path %></span> <span class="pull-left brand"><%= link_to 'Instagram', root_path %></span>
 							</div>
 							<div class="row">
 								<div class="col-xs-6">
 									<% if user_signed_in? %>
 									   <span class="nav_links pull-right"><%= link_to 'New Post', new_post_path %></span>
-									   <span class="nav_links pull-right"><%= link_to 'Edit Setting', edit_user_registration_path %></span>
+									   <span class="nav_links pull-right"><%= link_to 'Setting', edit_user_registration_path %></span>
 									   <span class="nav_links pull-right"><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></span>
 									<% else %>
 									   <span class="nav_links pull-right"><%= link_to 'Sign up', new_user_registration_path %></span>
@@ -40,8 +41,8 @@
 	</div>
 </nav>
 
+ <%= yield %>
 
-<%= yield %>
 
 
 </body>

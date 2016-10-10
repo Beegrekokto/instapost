@@ -1,13 +1,13 @@
 body {
-	background-color: #fafafa;
+	background-color: #fafafa !important;
 }
 
 nav {
     width: 100%;
-	background-color: #fafafa;
+	background-color: white;
 	padding: 0px 0px 0px 0px;
 	height: 77px;
-	border: 0px solid black;
+	border-bottom: 1px solid whitesmoke;
 }
 
 .brand {
@@ -17,6 +17,7 @@ nav {
 	color: white;
 	text-align: center;
 	font-weight: 550;
+
 }
 .nav_links {
 	vertical-align: middle;
@@ -25,15 +26,17 @@ nav {
 	margin: 0px 20px;
 }
 .nav_wrapper{
-	line-height: 78px;
-	text-align: center;
-	
+    margin-top: 5px !important;
 }
 
 .brand {
   a {
   	color: black;
-  }
+  	}
+  	img{
+  	    height: 30px;
+  	    width: 30px;
+  	}
 }
 .nav_links{
 	a{
@@ -84,4 +87,19 @@ nav {
 	 	font-size: 20px;
 	}
 }
-
+.col-lg-offset-2{
+	margin-top: 15px;
+	
+}
+.show_post{
+	margin-left: 350px;;
+}
+.update_post{
+	margin-left: 200px;
+	margin-right: 150px;
+}
+.edit_setting{
+	margin-left: 350px;
+	margin-right: 150px;
+	border: 1px solid black;
+}
